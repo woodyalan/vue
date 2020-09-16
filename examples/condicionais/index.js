@@ -1,4 +1,7 @@
 var app = new Vue({
   el: '#app',
-  data: {},
+  data: {
+    mensagem: 'Olá Vue!',
+    exibirMensagem: true,
+  },
 });

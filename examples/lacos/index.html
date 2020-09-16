@@ -10,7 +10,32 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <ul>
+        <li v-for="fruta of frutas">{{ fruta }}</li>
+      </ul>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <td></td>
+            <td>Nome</td>
+            <td>Idade</td>
+            <td>E-mail</td>
+            <td>Telefone</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="pessoa of pessoas">
+            <td></td>
+            <td>{{pessoa.nome}}</td>
+            <td>{{pessoa.idade}}</td>
+            <td><a :href="`to:${pessoa.email}`">{{pessoa.email}}</a></td>
+            <td><a :href="`tel:${pessoa.telefone}`">{{pessoa.telefone}}</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
     <script type="text/javascript" src="index.js"></script>
   </body>

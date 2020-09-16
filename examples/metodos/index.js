@@ -1,5 +1,11 @@
 var app = new Vue({
   el: '#app',
-  data: {},
-  methods: {},
+  data: {
+    mensagem: 'Olá!',
+  },
+  methods: {
+    darTchau(mensagem) {
+      this.mensagem = mensagem;
+    },
+  },
 });

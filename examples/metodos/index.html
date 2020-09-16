@@ -10,7 +10,13 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div class="container">
+        <p>{{mensagem}}</p>
+
+        <a href="#" class="btn btn-primary" v-on:click.prevent="darTchau('Até logo!')">Despedir-se</a>
+      </div>
+    </div>
 
     <script type="text/javascript" src="index.js"></script>
   </body>
